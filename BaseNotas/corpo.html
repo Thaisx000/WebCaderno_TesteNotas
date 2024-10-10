@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcaderno - Anotações</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <div class="btn-container">
+            <button id="criarBtn">Criar</button>
+        </div>
+        <div id="dropdown" class="dropdown-content">
+            <button onclick="criarNota()">Notas</button>
+            <button onclick="criarFlashCards()">Flash Cards</button>
+            <button onclick="criarMapaMental()">Mapas Mentais</button>
+        </div>
+
+        <div id="toolbar" class="toolbar">
+            <button onclick="format('bold')">Negrito</button>
+            <button onclick="format('italic')">Itálico</button>
+            <button onclick="format('underline')">Sublinhar</button>
+            <button onclick="alterarTamanho()">Tamanho da Fonte</button>
+            <button onclick="salvarNota()">Salvar</button>
+        </div>
+
+        <div id="content"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
